@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin-bottom: 10px;
 `;
 
-export const TaskName = styled.p`
+export const TaskName = styled.label`
   width: 100%;
   height: 100%;
   font-size: 18px;
@@ -19,15 +19,20 @@ export const TaskName = styled.p`
   background-color: #8257e6;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+
 `;
 
 export const DeleteButton = styled.button`
   height: 100%;
   text-align: center;
-  border: none;
+  border: 2px solid #bf07ac;
   border-radius: 5px;
   outline: none;
   padding: 0px 20px;
-  background-color: #f00;
+  background-color: transparent;
   margin-left: 10px;
 `;
